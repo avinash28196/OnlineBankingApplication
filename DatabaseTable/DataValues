@@ -1,0 +1,28 @@
+UserInfo Table
+
+INSERT INTO `BankApplication`.`UserInfo` (`UserID`, `LoginPassword`, `SecretQuestion`, `TransactionPassword`) VALUES ('1527', 'admin', 'Food?', 'admin');
+INSERT INTO `BankApplication`.`UserInfo` (`UserID`, `LoginPassword`, `SecretQuestion`, `TransactionPassword`) VALUES ('1995', 'admin', 'Food?', 'admin');
+INSERT INTO `BankApplication`.`UserInfo` (`UserID`, `LoginPassword`, `SecretQuestion`, `TransactionPassword`) VALUES ('1996', 'admin', 'Food?', 'admin');
+
+
+CustomerTable
+
+INSERT INTO `BankApplication`.`Customer` (`AccountID`, `CustomerName`, `Email`, `Address`, `Pancard`) VALUES ('100', 'Avinash', 'avi@gmail.com', 'BNG', 'AX100','1527');
+INSERT INTO `BankApplication`.`Customer` (`AccountID`, `CustomerName`, `Email`, `Address`, `Pancard`) VALUES ('101', 'Arun', 'arun@gmail.com', 'MAS', 'AX101','1996');
+INSERT INTO `BankApplication`.`Customer` (`AccountID`, `CustomerName`, `Email`, `Address`, `Pancard`) VALUES ('102', 'Anusha', 'anusha@gmail.com', 'PUNE', 'AX102','1995');
+INSERT INTO `BankApplication`.`Customer` (`AccountID`, `CustomerName`, `Email`, `Address`, `Pancard`) VALUES ('103', 'Avinash', 'avi@gmail.com', 'BNG', 'AX100','1527);
+
+
+AccountMaster Table
+
+INSERT INTO `BankApplication`.`AccountMaster` (`AccountID`, `AccountType`, `AccountBalance`, `OpenDate`) VALUES ('100', 'Savings', '10000', '12-Jan-2016');
+INSERT INTO `BankApplication`.`AccountMaster` (`AccountID`, `AccountType`, `AccountBalance`, `OpenDate`) VALUES ('101', 'Current', '25000', '12-Jun-2016');
+INSERT INTO `BankApplication`.`AccountMaster` (`AccountID`, `AccountType`, `AccountBalance`, `OpenDate`) VALUES ('102', 'Savings ', '10000', '12-Feb-2012');
+INSERT INTO `BankApplication`.`AccountMaster` (`AccountID`, `AccountType`, `AccountBalance`) VALUES ('103', 'Current', '25000');
+
+PayeeDetails Table
+
+
+INSERT INTO `BankApplication`.`PayeeDetails` (`AccountID`, `PayeeAccountID`, `PayeeName`) VALUES ('100', '101', 'Arun');
+INSERT INTO `BankApplication`.`PayeeDetails` (`AccountID`, `PayeeAccountID`, `PayeeName`) VALUES ('100', '102', 'Anusha');
+INSERT INTO `BankApplication`.`PayeeDetails` (`AccountID`, `PayeeAccountID`) VALUES ('101', '100');
